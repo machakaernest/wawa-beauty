@@ -1,0 +1,23 @@
+{
+  "name": "store-backend",
+  "version": "1.0.0",
+  "description": "MySQL-backed REST API for the Maison Lumière store and admin dashboard",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:setup": "node src/setup-db.js",
+    "db:seed": "node src/seed.js",
+    "db:reset": "node src/setup-db.js && node src/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.2.0",
+    "mysql2": "^3.11.5"
+  }
+}
